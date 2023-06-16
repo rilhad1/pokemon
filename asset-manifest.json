@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/rilhad1/pokemon/static/css/main.ae71d505.css",
+    "main.js": "/rilhad1/pokemon/static/js/main.9975aa86.js",
+    "static/js/787.86f9dd6d.chunk.js": "/rilhad1/pokemon/static/js/787.86f9dd6d.chunk.js",
+    "static/media/logo.svg": "/rilhad1/pokemon/static/media/logo.b2e5a01e505f739f1484b881277d5186.svg",
+    "index.html": "/rilhad1/pokemon/index.html",
+    "main.ae71d505.css.map": "/rilhad1/pokemon/static/css/main.ae71d505.css.map",
+    "main.9975aa86.js.map": "/rilhad1/pokemon/static/js/main.9975aa86.js.map",
+    "787.86f9dd6d.chunk.js.map": "/rilhad1/pokemon/static/js/787.86f9dd6d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae71d505.css",
+    "static/js/main.9975aa86.js"
+  ]
+}
