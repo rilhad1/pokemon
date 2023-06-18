@@ -1,58 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React, {lazy, Suspense} from 'react';
+import {Container} from "react-bootstrap";
+import FullScreenSpinner from "./components/common/Spinner";
+import Pokedex from './components/pokedex/Pokedex';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="src/App"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="src/App"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="src/App"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="src/App"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux NEEEEWWWW
-          </a>
-        </span>
-      </header>
-    </div>
-  );
+const Header = lazy(() => import('./components/header/Header'));
+// const Pokedex = lazy(() => import('./components/pokedex/Pokedex'));
+
+export default function App() {
+    return (
+            <Suspense fallback={<FullScreenSpinner/>}>
+                <Header/>
+                <Pokedex/>
+            </Suspense>
+    );
 }
-
-export default App;
